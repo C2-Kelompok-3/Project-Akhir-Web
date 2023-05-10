@@ -9,7 +9,7 @@ if(isset($_SESSION['kd_cs'])){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bakery</title>
+	<title>SHINE BAKERY</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">

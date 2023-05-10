@@ -8,7 +8,7 @@ include 'header.php';
     }
 </style>
 <div class="container">
-		<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>Panduan Aplikasi</b></h2>
+		<h2 style=" width: 100%; border-bottom: 4px solid #ff8680"><b>Manual Aplikasi</b></h2>
 	<div class="bs-acc">
 		<div class="panel-group" id="accordion">
 			<div class="panel panel-default">
@@ -22,7 +22,7 @@ include 'header.php';
 				<div id="collapseOne" class="panel-collapse collapse in">
 					<div class="panel-body">
 						<ol>
-							<li>Pastikan Anda sudah Daftar/Registrasi terlebih dahulu</li>
+							<li>Pastikan Anda sudah Daftar/Register dahulu</li>
 							<li>Pilih Produk yang ingin dibeli</li>
 							<li>Lakukan Checkout pesanan anda</li>
 						</ol>
