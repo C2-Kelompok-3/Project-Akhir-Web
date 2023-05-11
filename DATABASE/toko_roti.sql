@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2023 at 05:07 PM
+-- Generation Time: May 11, 2023 at 01:12 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `toko roti`
+-- Database: `toko_roti`
 --
 
 -- --------------------------------------------------------
@@ -62,11 +62,48 @@ INSERT INTO `bom_produk` (`kode_bom`, `kode_bk`, `kode_produk`, `nama_produk`, `
 ('B0001', 'M0002', 'P0001', 'Roti Sobek', '2'),
 ('B0001', 'M0001', 'P0001', 'Roti Sobek', '4'),
 ('B0001', 'M0004', 'P0001', 'Roti Sobek', '3'),
-('B0003', '1', 'P0003', 'Roti Kayu Manis', ''),
-('B0002', '2', 'P0002', 'Roti Croissant Strawberry', ''),
-('B0002', '1', 'P0002', 'Roti Croissant Strawberry', ''),
-('B0003', '2', 'P0003', 'Roti Kayu Manis', ''),
-('B0003', '4', 'P0003', 'Roti Kayu Manis', '');
+('B0002', 'M0002', 'P0002', 'Roti Sisir Mentega', '250'),
+('B0002', 'M0009', 'P0002', 'Roti Sisir Mentega', '250'),
+('B0002', 'M0001', 'P0002', 'Roti Sisir Mentega', '250'),
+('B0002', 'M0011', 'P0002', 'Roti Sisir Mentega', '250'),
+('B0003', 'M0007', 'P0003', 'Roti Gandum Coklat', '250'),
+('B0003', 'M0002', 'P0003', 'Roti Gandum Coklat', '250'),
+('B0003', 'M0006', 'P0003', 'Roti Gandum Coklat', '250'),
+('B0003', 'M0017', 'P0003', 'Roti Gandum Coklat', '250'),
+('B0005', '', 'P0005', 'Roti Croissant Strawberry', ''),
+('B0005', 'M0002', 'P0005', 'Roti Croissant Strawberry', '250'),
+('B0005', 'M0016', 'P0005', 'Roti Croissant Strawberry', '250'),
+('B0005', 'M0017', 'P0005', 'Roti Croissant Strawberry', '250'),
+('B0006', 'M0001', 'P0006', 'Roti Croissant Kacang', '250'),
+('B0006', 'M0002', 'P0006', 'Roti Croissant Kacang', '250'),
+('B0006', 'M0015', 'P0006', 'Roti Croissant Kacang', '250'),
+('B0007', 'M0007', 'P0007', 'Roti Gandum Mekar', '250'),
+('B0007', 'M0002', 'P0007', 'Roti Gandum Mekar', '250'),
+('B0007', 'M0017', 'P0007', 'Roti Gandum Mekar', '250'),
+('B0008', 'M0001', 'P0008', 'Roti Croissant Original', '250'),
+('B0008', 'M0002', 'P0008', 'Roti Croissant Original', '250'),
+('B0009', 'M0001', 'P0009', 'Roti Sisir Coklat', '250'),
+('B0009', 'M0002', 'P0009', 'Roti Sisir Coklat', '250'),
+('B0009', 'M0005', 'P0009', 'Roti Sisir Coklat', '250'),
+('B0010', 'M0001', 'P0010', 'Roti Tawar Original', '250'),
+('B0010', 'M0002', 'P0010', 'Roti Tawar Original', '250'),
+('B0011', 'M0001', 'P0011', 'Roti Croissant Cincin', '250'),
+('B0011', 'M0002', 'P0011', 'Roti Croissant Cincin', '250'),
+('B0012', 'M0001', 'P0012', 'Roti Goreng', '250'),
+('B0012', 'M0002', 'P0012', 'Roti Goreng', '250'),
+('B0012', 'M0012', 'P0012', 'Roti Goreng', '250'),
+('B0012', 'M0011', 'P0012', 'Roti Goreng', '250'),
+('B0013', 'M0001', 'P0013', 'Roti Gembong', '250'),
+('B0013', 'M0002', 'P0013', 'Roti Gembong', '250'),
+('B0013', 'M0003', 'P0013', 'Roti Gembong', '250'),
+('B0013', 'M0004', 'P0013', 'Roti Gembong', '250'),
+('B0013', 'M0005', 'P0013', 'Roti Gembong', '250'),
+('B0014', 'M0001', 'P0014', 'Roti Kayu Manis', '250'),
+('B0014', 'M0002', 'P0014', 'Roti Kayu Manis', '250'),
+('B0014', 'M0008', 'P0014', 'Roti Kayu Manis', '250'),
+('B0015', 'M0001', 'P0015', 'Roti Maros', '250'),
+('B0015', 'M0002', 'P0015', 'Roti Maros', '250'),
+('B0015', 'M0010', 'P0015', 'Roti Maros', '250');
 
 -- --------------------------------------------------------
 
@@ -91,7 +128,8 @@ INSERT INTO `customer` (`kode_customer`, `nama`, `email`, `username`, `password`
 ('C0002', 'Rafi Akbar', 'a.rafy@gmail.com', 'rafi', '$2y$10$/UjGYbisTPJhr8MgmT37qOXo1o/HJn3dhafPoSYbOlSN1E7olHIb.', '0856748564'),
 ('C0003', 'Nagita Silvana', 'bambang@gmail.com', 'Nagita', '$2y$10$47./qEeA/y3rNx3UkoKmkuxoAtmz4ebHSR0t0Bc.cFEEg7cK34M3C', '087804616097'),
 ('C0004', 'Nadiya', 'nadiya@gmail.com', 'nadiya', '$2y$10$6wHH.7rF1q3JtzKgAhNFy.4URchgJC8R.POT1osTAWmasDXTTO7ZG', '0898765432'),
-('C0005', 'acha', 'user@user.com', 'acha', '$2y$10$.ptgcAs7MO4mDIWIyO4qCebJyQ0utkwFPmDVWyia6ldSAiyrFB/2i', '4676787');
+('C0005', 'acha', 'user@user.com', 'acha', '$2y$10$.ptgcAs7MO4mDIWIyO4qCebJyQ0utkwFPmDVWyia6ldSAiyrFB/2i', '4676787'),
+('C0006', 'amel', 'amel@gmail.com', 'amel', '$2y$10$OtB4cWZCRygiVBVnMnBN7uD1Oy3O4cWpuwTDZfzmmleg4xXh58C.K', '4676787689');
 
 -- --------------------------------------------------------
 
@@ -114,10 +152,23 @@ CREATE TABLE `inventory` (
 
 INSERT INTO `inventory` (`kode_bk`, `nama`, `qty`, `satuan`, `harga`, `tanggal`) VALUES
 ('M0001', 'Tepung', '76', 'Kg', 1000, '2020-07-26'),
-('M0002', 'Pengembang', '0', 'Kg', 1000, '2020-07-27'),
-('M0003', 'Cream', '17', 'Kg', 3000, '2020-07-26'),
+('M0002', 'Pengembang', '100', 'Kg', 10000, '2023-05-11'),
+('M0003', 'Cream', '50', 'Kg', 3000, '2023-05-11'),
 ('M0004', 'Keju', '82', 'Kg', 4000, '2020-07-26'),
-('M0005', 'Coklat', '0', 'Kg', 5000, '2020-07-27');
+('M0005', 'Coklat', '60', 'Kg', 18000, '2023-05-11'),
+('M0006', 'Coklat Bubuk', '60', 'Kg', 10000, '2023-05-11'),
+('M0007', 'Tepung Gandum', '70', 'Kg', 8000, '2023-05-11'),
+('M0008', 'Kayu Manis Bubuk', '40', 'gram', 7000, '2023-05-11'),
+('M0009', 'Mentega', '80', 'Kg', 15000, '2023-05-11'),
+('M0010', 'Selai Serikaya', '50', 'gram', 15000, '2023-05-11'),
+('M0011', 'Susu Kental Manis', '60', 'gram', 6000, '2023-05-11'),
+('M0012', 'Sayuran ', '40', 'Kg', 8000, '2023-05-11'),
+('M0013', 'Tepung Roti', '55', 'gram', 18000, '2023-05-11'),
+('M0014', 'Roti Tawar', '50', 'gram', 16000, '2023-05-11'),
+('M0015', 'Kacang', '40', 'Kg', 24000, '2023-05-11'),
+('M0016', 'Wiijen Hitam', '65', 'Kg', 20000, '2023-05-11'),
+('M0017', 'Gula Halus', '70', 'Kg', 20000, '2023-05-11'),
+('M0018', 'Strawberry', '80', 'Kg', 80000, '2023-05-11');
 
 -- --------------------------------------------------------
 
@@ -181,9 +232,19 @@ CREATE TABLE `produk` (
 
 INSERT INTO `produk` (`kode_produk`, `nama`, `image`, `deskripsi`, `harga`) VALUES
 ('P0001', 'Roti Sobek', '5f1d915d27dc3.jpg', '																								Roti Enak Sobek Sobek aww\r\n																					', 10000),
-('P0002', 'Roti Croissant Strawberry', '645a564b3d3a5.jpg', '\r\n			', 20000),
-('P0003', 'Roti Kayu Manis', '645a56956cb8d.jpg', '\r\n			', 15000),
-('P0004', 'Roti Sisir Mentega', '645a56ece1654.jpg', '\r\n			', 15000);
+('P0002', 'Roti Sisir Mentega', '645c8d473b29a.jpg', 'Enak dan lembut\r\n			', 14000),
+('P0003', 'Roti Gandum Coklat', '645c8e3e5a1f6.jpg', 'Lembut dan enak\r\n			', 15000),
+('P0005', 'Roti Croissant Strawberry', '645c8f8180b09.jpg', 'Enak dan berasa strawberry nya\r\n						', 20000),
+('P0006', 'Roti Croissant Kacang', '645c903f7d31d.jpg', 'Enak dan toping kacang yang enak\r\n			', 25000),
+('P0007', 'Roti Gandum Mekar', '645c90c367f3d.jpg', 'Enak dan roti yang lembut\r\n			', 20000),
+('P0008', 'Roti Croissant Original', '645c911b30718.jpg', 'Enak dan rasa yang cocok\r\n			', 16000),
+('P0009', 'Roti Sisir Coklat', '645c9171d8ecf.jpg', 'Enak dan coklatnya melimpah\r\n			', 16000),
+('P0010', 'Roti Tawar Original', '645c921551a3f.jpg', 'Lembut dan enak\r\n			', 14000),
+('P0011', 'Roti Croissant Cincin', '645c9257d1546.jpg', 'Lembut dan enak\r\n			', 15000),
+('P0012', 'Roti Goreng', '645c92c4e4d02.jpg', 'Enak dan garing\r\n			', 15000),
+('P0013', 'Roti Gembong', '645c93452ec17.jpg', 'Enak, lembut dan toping coklat dan kejunya melimpah\r\n			', 20000),
+('P0014', 'Roti Kayu Manis', '645c938e7cc6d.jpg', 'Enak dan terasa manis \r\n			', 14000),
+('P0015', 'Roti Maros', '645c93e4d4701.jpg', 'Lembut dan enak dengan limpahan selai serikaya di tengahnya\r\n			', 25000);
 
 -- --------------------------------------------------------
 
@@ -217,14 +278,16 @@ CREATE TABLE `produksi` (
 INSERT INTO `produksi` (`id_order`, `invoice`, `kode_customer`, `kode_produk`, `nama_produk`, `qty`, `harga`, `status`, `tanggal`, `provinsi`, `kota`, `alamat`, `kode_pos`, `terima`, `tolak`, `cek`) VALUES
 (8, 'INV0001', 'C0002', 'P0003', 'Kue tart coklat', 1, 100000, 'Pesanan Baru', '2020-07-27', 'Jawa Timur', 'Surabaya', 'Jl.Tanah Merah Indah 1', '60129', '2', '1', 1),
 (9, 'INV0002', 'C0002', 'P0001', 'Roti Sobek', 3, 10000, 'Pesanan Baru', '2020-07-27', 'Jawa Barat', 'Bandung', 'Jl.Jati Nangor Blok C, 10', '30712', '0', '0', 1),
-(10, 'INV0003', 'C0003', 'P0002', 'Maryam', 2, 15000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(11, 'INV0003', 'C0003', 'P0003', 'Kue tart coklat', 1, 100000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(12, 'INV0003', 'C0003', 'P0001', 'Roti Sobek', 1, 10000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 0),
-(13, 'INV0004', 'C0004', 'P0002', 'Maryam', 1, 15000, 'Pesanan Baru', '2020-07-26', 'Jawa Timur', 'Sidoarjo', 'Jl.KH Syukur Blok C 18 A', '50987', '0', '0', 0),
-(14, 'INV0005', 'C0005', 'P0002', 'Roti Croissant Strawberry', 1, 20000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
-(15, 'INV0005', 'C0005', 'P0003', 'Roti Kayu Manis', 1, 15000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
+(10, 'INV0003', 'C0003', 'P0002', 'Maryam', 2, 15000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 1),
+(11, 'INV0003', 'C0003', 'P0003', 'Kue tart coklat', 1, 100000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 1),
+(12, 'INV0003', 'C0003', 'P0001', 'Roti Sobek', 1, 10000, '0', '2020-07-27', 'Jawa Tengah', 'Yogyakarta', 'Jl.Malioboro, Blok A 10D', '30123', '1', '0', 1),
+(13, 'INV0004', 'C0004', 'P0002', 'Maryam', 1, 15000, 'Pesanan Baru', '2020-07-26', 'Jawa Timur', 'Sidoarjo', 'Jl.KH Syukur Blok C 18 A', '50987', '0', '0', 1),
+(14, 'INV0005', 'C0005', 'P0002', 'Roti Croissant Strawberry', 1, 20000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 1),
+(15, 'INV0005', 'C0005', 'P0003', 'Roti Kayu Manis', 1, 15000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 1),
 (16, 'INV0006', 'C0005', 'P0001', 'Roti Sobek', 1, 10000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
-(17, 'INV0006', 'C0005', 'P0004', 'Roti Sisir Mentega', 1, 15000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0);
+(17, 'INV0006', 'C0005', 'P0004', 'Roti Sisir Mentega', 1, 15000, 'Pesanan Baru', '2323-05-09', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 0),
+(18, 'INV0007', 'C0006', 'P0002', 'Roti Sisir Mentega', 1, 14000, 'Pesanan Baru', '2323-05-11', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 1),
+(19, 'INV0007', 'C0006', 'P0013', 'Roti Gembong', 1, 20000, 'Pesanan Baru', '2323-05-11', 'kalimantan timur', 'Samarinda', 'Jl. Perjuangan', '7552', '0', '0', 1);
 
 -- --------------------------------------------------------
 
@@ -411,7 +474,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `keranjang`
 --
 ALTER TABLE `keranjang`
-  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_keranjang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `penjual`
@@ -423,7 +486,7 @@ ALTER TABLE `penjual`
 -- AUTO_INCREMENT for table `produksi`
 --
 ALTER TABLE `produksi`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `report_cancel`
