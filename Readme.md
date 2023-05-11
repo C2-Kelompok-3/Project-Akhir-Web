@@ -35,7 +35,7 @@
 
 ##### Registrasi
 Di halaman Registrasi ini terdapat nama, email, username, no telp, password dan konfirmasi password seperti di gambar, jika sudah mengisi semuanya klik Registrasi /maka terdapat notifikasi "REGISTRASI BERHASIL" seperti gambar dibawah
-<img src="">
+<img src="Gambar/Screenshot 2023-05-11 170457.png">
 <img src="">
 
 
