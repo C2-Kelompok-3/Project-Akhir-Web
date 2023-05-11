@@ -35,7 +35,7 @@
 
 ##### Registrasi
 Di halaman Registrasi ini terdapat nama, email, username, no telp, password dan konfirmasi password seperti di gambar, jika sudah mengisi semuanya klik Registrasi /maka terdapat notifikasi "REGISTRASI BERHASIL" seperti gambar dibawah
-<img src="Gambar/Screenshot 2023-05-11 170457.png">
+![Gambar/Screenshot 2023-05-11 170457.png](https://github.com/C2-Kelompok-3/Project-Akhir-Web/compare/ecb03f7881bf86d63c70ee191d38f9cd62b402aa...ecc142c33394bbc2efa82a1f4fb8237abf496fa8)
 <img src="">
 
 
