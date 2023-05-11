@@ -101,7 +101,7 @@ Di halaman Registrasi ini terdapat nama, email, username, no telp, password dan 
 
 
 ##### USE CASE DIAGRAM SHINE BAKERY
-<img src="">
+![ERD Shine Bakery](https://github.com/C2-Kelompok-3/Project-Akhir-Web/blob/main/Gambar/ERD.png)
 
 
 ##### ERD SHINE BAKERY
